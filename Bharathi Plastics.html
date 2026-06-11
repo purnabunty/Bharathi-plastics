@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Reports</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .year-btn {
+            background-color: #0078D4;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .year-btn:hover {
+            background-color: #005A9E;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sales Reports Dashboard</h1>
+
+    <div class="container">
+        <button class="year-btn" onclick="openReport('https://1drv.ms/x/c/726b9244ccf8f6a0/IQCg9vjMRJJrIIByJwoAAAAAAVqoyQYtR3xAstfdH65jMeQ?e=kbHdw9L')">
+            Sales 2023 to 2024
+        </button>
+
+        <button class="year-btn" onclick="openReport('https://1drv.ms/x/c/A6EA805431C181E2/IQDigcExVIDqIICmsQAAAAAAAfrK9xAjmuhIzaUco7MEzgM?e=m2jLtb')">
+            Sales 2024 to 2025
+        </button>
+
+        <button class="year-btn" onclick="openReport('https://1drv.ms/x/c/A6EA805431C181E2/IQAHRe_1Bl2jSJE05foASjIoAR08PSdaMPyRKVsF5fC_tZ8?e=9VpBlF')">
+            Sales 2025 to 2026
+        </button>
+
+        
+    </div>
+
+    <script>
+        function openReport(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+
+</body>
+</html>
